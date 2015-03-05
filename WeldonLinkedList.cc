@@ -72,6 +72,12 @@ int NumberSet::Size() const
 void NumberSet::Output()
 {
    NodeType* temp = start;
+	// when data is not there
+	if(temp == NULL)
+	{
+		cout << "No data in set." << endl;	
+	}
+	// when data is there
    while(temp != NULL)
    {
       cout << temp -> data << endl;
